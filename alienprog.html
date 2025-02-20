@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruglov Max / alienprog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #1b0c30, #2e134d);
+            color: #e6edf3;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            margin: 10px 0;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(155, 52, 239, 0.8);
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #6e57e0, #9b34ef);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(155, 52, 239, 0.6);
+            font-size: 14px;
+        }
+        .buttons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(155, 52, 239, 1);
+        }
+        .info {
+            margin-top: 20px;
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: justify;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(155, 52, 239, 0.8);
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/1845925743534874983/E0D974E74D07E8482907946AE16EBD2F39F44BE4/?imw=512&imh=512&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Profile Picture">
+    <h1>Kruglov Max / alienprog</h1>
+    <h2>Frontend Developer / Designer</h2>
+    
+    <div class="buttons">
+        <a href="https://github.com/alienprog" target="_blank">GitHub</a>
+        <a href="https://t.me/kruglov_maxim" target="_blank">Telegram</a>
+        <a href="mailto:maks-kruglov-05@mail.ru">Email</a>
+        <a href="https://bsky.app/profile/@alienprog.bsky.social" target="_blank">Bluesky</a>
+    </div>
+    
+    <div class="info">
+        <p> born in 2005, Volgograd, Russia </p>
+    </div>
+</body>
+</html>
